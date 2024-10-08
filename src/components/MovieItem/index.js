@@ -1,6 +1,6 @@
 import Popup from 'reactjs-popup';
 import ReactPlayer from 'react-player';
-import { IoClose } from 'react-icons/io5'; // Use IoClose instead of IoMdClose
+import { IoClose } from 'react-icons/io5';
 import 'reactjs-popup/dist/index.css';
 import './index.css';
 
@@ -22,7 +22,7 @@ const MovieItem = ({ movieDetails }) => {
               data-testid="closeButton"
               onClick={close}
             >
-              <IoClose size={20} color="#231f20" /> {/* Updated icon */}
+              <IoClose size={20} color="#231f20" /> 
             </button>
             <div className="movie-player-container">
               <ReactPlayer url={videoUrl} controls />
